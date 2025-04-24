@@ -38,7 +38,7 @@ const server = async (status, msg) => {
         try {
             await axios.get('https://sctapi.ftqq.com/' + SENDKEY + '.send', {
                 params: {
-                    title: '状态：' + status,
+                    title: '状态：' + status + msg,
                     desp: '# ' + msg
                 }
             });
